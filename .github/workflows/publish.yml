@@ -8,8 +8,7 @@ on:
       - 'v*'
 
 env:
-  DOCKER_REPO_NAME: km776/forkfork
-
+  DOCKER_REPO_NAME: km776/mywebclass
 jobs:
   build:
 
