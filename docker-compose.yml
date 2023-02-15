@@ -21,7 +21,7 @@ services:
       volumes:
       - ./public_html/:/usr/local/apache2/htdocs/
     watchtower:
-      image: containrrr/watchtowerYEA
+      image: containrrr/watchtower
       container_name: watchtower
       restart: always
       command: '--interval 30 --label-enable --cleanup'
