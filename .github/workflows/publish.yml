@@ -8,7 +8,7 @@ on:
       - 'v*'
 
 env:
-  DOCKER_REPO_NAME: kaw393939/mywebclass
+  DOCKER_REPO_NAME: km776/forkfork
 
 jobs:
   build:
@@ -26,7 +26,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - uses: actions/setup-node@v3
         with:
-          node-version: 16 
+          node-version: 16
       - run: npm install
       - run: npm run build
       - name: Install dependencies
@@ -52,7 +52,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: ${{ env.DOCKER_REPO_NAME }} 
+          images: ${{ env.DOCKER_REPO_NAME }}
       # https://github.com/docker/setup-qemu-action
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
