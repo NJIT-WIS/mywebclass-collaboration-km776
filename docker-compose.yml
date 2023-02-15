@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
     master:
-      image: km776/forkfork
+      image: km776/mywebclass:master
       deploy:
         replicas: 2
       pull_policy: always
